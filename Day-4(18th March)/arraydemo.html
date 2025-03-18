@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array demo</title>
+</head>
+<body>
+    <script>
+        // array writing type-1
+        /*
+        let empname = ["omkar","aakansha","rohit","anurag"]
+        console.log(empname,typeof(empname));
+        let a=[]
+        console.log(a,typeof(a));
+        a.push("banana") // adds elemnt at last poition
+        console.log(a);        
+        empname.push("omkar ka bhai")
+        console.log(empname);
+        a.unshift("mast melon") // adds elements at first position
+        console.log(a);
+        empname.unshift("Aayush")
+        console.log(empname);
+        let x=[]
+        console.log(x);
+        x[6]="red"
+        console.log(x);
+        x[3]="blue"
+        console.log(x);
+        console.log(empname[3]);
+        console.log(empname[5]);
+
+        // remoing elements from array
+        empname.pop()
+        console.log(empname); // removes elements from last elements
+        empname.shift()
+        console.log(empname); // removes elements form first elements
+        */ 
+       // array writing type-2
+        let colors=new Array();
+        colors[0]="red"
+        colors.push("green")
+        colors.unshift("blue")
+        console.log(colors);
+        
+        // for loop
+        // type-1
+        for(let i=0;i<colors.length;i++)
+        {
+            console.log(colors[i]);
+        }       
+
+        //type-2
+        for (let i in colors )
+        {
+            console.log(i,colors[i]);
+        }
+
+        // type-3
+        for(let i of colors)
+        {
+            console.log(i);
+        }
+
+        //type-4
+        colors.forEach(i=>{
+            console.log(i);
+        })
+
+    </script>
+</body>
+</html>
