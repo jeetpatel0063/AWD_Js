@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects demo</title>
+
+</head>
+<body>
+    <script>
+        let empdata={
+            name:"omkar ka bhai",
+            age:20,
+            1:4565698134,
+            jobrole:"s/w Engineer",
+            salary:60000,
+        }
+        empdata.city="mumbai" // for adding another key value in object (syntax : objname.keyname=value)
+
+        for (let elements in empdata)
+        {
+            console.log(empdata[elements]);            
+        }
+
+        // let colors={}
+        // console.log(colors);
+        
+        // colors.first="red"
+        // colors.second="blue"
+        // console.log(colors);
+
+        console.log("adding data keys as functions");
+
+        empdata.data=function()
+        {
+            return this.name+" ki salary "+this.salary
+        }
+        
+        console.log(empdata.data());
+        
+    </script>
+</body>
+</html>

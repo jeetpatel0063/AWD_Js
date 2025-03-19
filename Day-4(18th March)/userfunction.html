@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Demo</title>
+</head>
+<body>
+    <script>
+        // user defined function types 1) Traditonal 2) Anonymous 3) Arrow
+        // 1)default
+        // 2) with parameter but without return type
+        // 3) without parameter but with return type
+        // 4) with parameter and with return type
+
+        //Default
+        // function show(){
+        //     console.log("func1");    
+        // }
+        // show()
+
+        // 2) with parameter but without return type
+        // function show(msg) {
+        //     console.log("func1",msg);
+        // }
+        // show("parameter function")
+
+        // 3) without parameter but with return type
+        // function show() {
+        //     return "function without parameter but return type" 
+        // }
+        // console.log(show())
+
+        // 4) with parameter and with return type
+        // function add(a,b) {
+        //     return a+b;
+        // }
+        // console.log("addition=",add(63,36));
+
+        //function parameters
+
+        // function add(a,b=6){
+        //     return a+b;
+        // }
+        // console.log(add(5));
+
+        // function sub(a=10,b){
+        //     return a-b;
+        // }
+        // console.log(sub(5));
+        
+        // function sub(a=10,b=6){
+        //     return a-b;
+        // }
+        // console.log(sub(6));
+
+        // ...rest parameter
+
+        // function showcolors(...args){
+        //     return args;
+        // }
+        // console.log(showcolors("red","green","blue"));
+        
+    //    let x=sum(63,53,89,9)
+    //     // console.log(x,typeof(x));
+    //     function sum() {
+    //         return arguments;
+    //     }
+    //     console.log(sum(x));
+    
+    //Anonymous Function
+    let show=function(){
+        console.log("anonymous function");
+    }
+    show()
+
+    // Arrow function
+    let display=()=>{
+        console.log("arrow function");
+    }
+    display()
+
+
+
+    </script>
+</body>
+</html>

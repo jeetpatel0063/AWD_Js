@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects-set</title>
+</head>
+<body>
+    <script>
+        let data=new Set(["a","b","c","d","c",63,79,98])
+        console.log(data,typeof(data));
+        data.add("grape")
+        console.log(data);
+        console.log("----------- for loop");
+        
+        for(let x of data)
+        {
+            console.log(x);
+        }
+        
+        let book=new Map([[1,"py"],[2,"js"],[3,"html"]])
+        console.log(book,typeof(book));
+
+        let colors=new Set()
+        colors.add("red")
+        colors.add("green")
+        colors.add("blue")
+        console.log(colors);
+        
+        // empty map
+        let studentdata=new Map()
+        studentdata.set("omkar","A")
+        studentdata.set("jeet","B")
+        studentdata.set("aakansha","O")
+        studentdata.set("omkar ka bhai","A+")
+        console.log(studentdata);
+        
+        // Date 
+
+        let d=new Date()
+        console.log(d,typeof(d));
+        console.log(d.getDate());
+        console.log(d.getFullYear());
+
+        //math
+
+        let m=-63
+        console.log(Math.abs(m));
+        console.log(Math.random());
+        console.log(Math.floor(Math.random()*1000));
+        
+        
+    </script>
+</body>
+</html>
