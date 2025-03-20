@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>call by value call by ref</title>
+</head>
+<body>
+    <script>
+        let callbyvalue=() => {
+            let a=5;
+            let b=6;
+            console.log("a=",a,"b=",b);
+            a=8;
+            console.log("updated a=",a,"updated b=",b);
+        };
+        callbyvalue();
+        let callbyreference=() => {
+            let a={fname:"raj",marks:93};
+            let b=a;
+            console.log("a-fname=",a.fname,"a-marks=",a.marks);
+            console.log("b-fname=",b.fname,"b-marks=",b.marks);
+            a.marks=86;
+            console.log("updated a-fname=",a.fname,"updated a-marks=",a.marks);
+            console.log("updated b-fname=",b.fname,"updated b-marks=",b.marks);
+        };
+        callbyreference();
+    </script>
+</body>
+</html>

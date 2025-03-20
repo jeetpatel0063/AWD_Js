@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Built in Functions</title>
+</head>
+<body>
+    <script>
+        /*
+        let student={
+            fname:"Raj",
+            lname:"Kumar",
+            fullname:function(){
+                return this.fname+" "+this.lname
+            }
+        }
+        console.log(student.fullname());
+        let s1={fname:"pooja",lname:"shinde"}
+        let s2={fname:"omkar",lname:"C"}
+        let s3={fname:"anurag",lname:"singh"}
+        console.log(student.fullname.call(s1)); // reads the argument as seperately
+        console.log(student.fullname.apply(s2)); //reads the argument as array
+        let ans=student.fullname.bind(s3); // borrowing given object elements
+        console.log(ans());
+        */ 
+       function test1(arg1,arg2) {
+        console.log("test1:",this.num,arg1,arg2);
+        
+       }
+        test1.call({num:100},12,13)  
+        function test2(...args) {
+            console.log("test2:",this.num,args);
+            
+        }  
+        test2.apply({num:100},[1,2,3,5,6,8])    
+        test2.apply({num:100},[1,2,3,5,6,8],test1.call({num:100},12,13))    
+
+        function test3(args) {
+            console.log("test3:",this.num,args);
+        }
+        let ans=test3.bind({num:100},101)
+        console.log(ans());
+        
+    </script>
+</body>
+</html>
